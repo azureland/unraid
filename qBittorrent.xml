@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container>
-  <Name>FileBrowser</Name>
+  <Name>qTittorrent</Name>
   <Repository>80x86/qbittorrent:4.2.3-amd64</Repository>
   <Registry>https://hub.docker.com/r/80x86/qbittorrent</Registry>
   <Network>host</Network>
