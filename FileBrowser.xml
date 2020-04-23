@@ -45,7 +45,7 @@
       <Mode/>
     </Variable>
     <Variable>
-      <Value>on或off</Value>
+      <Value>off</Value>
       <Name>SSL</Name>
       <Mode/>
     </Variable>
