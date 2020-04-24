@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <Container>
-  <Name>baidupcs-web</Name>
-  <Repository> johngong/baidupcs-web:latest</Repository>
-  <Registry>https://hub.docker.com/r/johngong/baidupcs-web</Registry>
+  <Name>baidupcs</Name>
+  <Repository>80x86/baidupcs:latest</Repository>
+  <Registry>https://hub.docker.com/r/80x86/baidupcs</Registry>
   <Network>host</Network>
   <Privileged>false</Privileged>
-  <Project>https://hub.docker.com/r/johngong/baidupcs-web</Project>
-  <Overview>baidupcs-web</Overview>
+  <Project>https://hub.docker.com/r/80x86/baidupcs</Project>
+  <Overview>baidupcs</Overview>
   <Description>
-    baidupcs web
+      荒野无灯 baidupcs
   </Description>
   <Category>Cloud: Network:Web Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:5299]</WebUI>
   <Icon>https://d36jcksde1wxzq.cloudfront.net/be7833db9bddb4494d2a7c3dd659199a.png</Icon>
-  <ExtraParams>--name=baidupcs --restart unless-stopped</ExtraParams>
+  <ExtraParams></ExtraParams>
   <PostArgs></PostArgs>
   <CPUset/>
   <DateInstalled></DateInstalled>
@@ -22,21 +22,36 @@
   <Description></Description>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/baidupcs-web/config</HostDir>
-      <ContainerDir>/config</ContainerDir>
+      <HostDir>/mnt/user/appdata/baidupcs/config</HostDir>
+      <ContainerDir>/app/.config/BaiduPCS-Go</ContainerDir>
       <Mode>rw</Mode>
     </Volume> 
     <Volume>
       <HostDir>default download location</HostDir>
-      <ContainerDir>/root/Downloads</ContainerDir>
+      <ContainerDir>/app/Downloads</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <Environment> 
- <Variable>
-      <Value>5299</Value>
-      <Name>5299</Name>
+  <Environment>
+    <Variable>
+      <Value>1000</Value>
+      <Name>PUID</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value>1000</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>000</Value>
+      <Name>UMASK_SET</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>5299</Value>
+      <Name>WEB_PORT</Name>
+      <Mode/>
+    </Variable>    
   </Environment>
 </Container>
