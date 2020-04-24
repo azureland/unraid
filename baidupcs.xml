@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container>
+  <Name>baidupcs-web</Name>
+  <Repository> johngong/baidupcs-web:latest</Repository>
+  <Registry>https://hub.docker.com/r/johngong/baidupcs-web</Registry>
+  <Network>host</Network>
+  <Privileged>false</Privileged>
+  <Project>https://hub.docker.com/r/johngong/baidupcs-web</Project>
+  <Overview>baidupcs-web</Overview>
+  <Description>
+    baidupcs web
+  </Description>
+  <Category>Cloud: Network:Web Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:5299]</WebUI>
+  <Icon>https://d36jcksde1wxzq.cloudfront.net/be7833db9bddb4494d2a7c3dd659199a.png</Icon>
+  <ExtraParams>--name=baidupcs --restart unless-stopped</ExtraParams>
+  <PostArgs></PostArgs>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description></Description>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/baidupcs-web/config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume> 
+    <Volume>
+      <HostDir>default download location</HostDir>
+      <ContainerDir>/root/Downloads</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment> 
+
+  </Environment>
+</Container>
