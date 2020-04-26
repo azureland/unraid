@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Container>
+  <Name>yyets-web</Name>
+  <Repository>oldiy/rrshare64:latest</Repository>
+  <Registry>https://hub.docker.com/r/oldiy/rrshare64</Registry>
+  <Network>host</Network>
+  <Privileged>false</Privileged>
+  <Project>https://hub.docker.com/r/oldiy/rrshare64</Project>
+  <Overview>yyets</Overview>
+  <Description>
+     人人影视 web 版 
+  </Description>
+  <Category>Cloud: Network:Web Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:3001]</WebUI>
+  <Icon>https://d36jcksde1wxzq.cloudfront.net/be7833db9bddb4494d2a7c3dd659199a.png</Icon>
+  <ExtraParams></ExtraParams>
+  <PostArgs></PostArgs>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description></Description>
+  <Data>  
+    <Volume>
+      <HostDir>default download location</HostDir>
+      <ContainerDir>/opt/work/store</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>1000</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+</Container>
