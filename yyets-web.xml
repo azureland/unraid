@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container>
   <Name>yyets-web</Name>
-  <Repository>oldiy/rrshare64:latest</Repository>
+  <Repository>oldiy/rrshare64</Repository>
   <Registry>https://hub.docker.com/r/oldiy/rrshare64</Registry>
   <Network>host</Network>
   <Privileged>false</Privileged>
