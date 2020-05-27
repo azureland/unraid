@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<Container>
+  <Name>tinymediamanager</Name>
+  <Repository>romancin/tinymediamanager:latest</Repository>
+  <Registry>https://hub.docker.com/r/romancin/tinymediamanager</Registry>
+  <Network>host</Network>
+  <Privileged>false</Privileged>
+  <Project>https://hub.docker.com/r/romancin/tinymediamanager</Project>
+  <Overview>TinyMediaManager with gui</Overview>
+  <Description>
+    TinyMediaManager with gui
+  </Description>
+  <Category>Cloud: Network:Web Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:5800]</WebUI>
+  <Icon>https://d36jcksde1wxzq.cloudfront.net/be7833db9bddb4494d2a7c3dd659199a.png</Icon>
+  <ExtraParams></ExtraParams>
+  <PostArgs></PostArgs>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description></Description>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/tinymediamanager/config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume> 
+    <Volume>
+      <HostDir>default media location</HostDir>
+      <ContainerDir>/media</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>1000</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>1000</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>000</Value>
+      <Name>UMASK_SET</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>5800</Value>
+      <Name>WEB_PORT</Name>
+      <Mode/>
+    </Variable>    
+    <Variable>
+      <Value>5900</Value>
+      <Name>VNC_PORT</Name>
+      <Mode/>
+    </Variable>    
+  </Environment>
+</Container>
