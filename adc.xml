@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<Container>
+  <Name>adc</Name>
+  <Repository>j3n5en/av-data-capture:latest</Repository>
+  <Registry>https://hub.docker.com/r/j3n5en/av-data-capture</Registry>
+  <Network>host</Network>
+  <Privileged>false</Privileged>
+  <Project>https://hub.docker.com/r/j3n5en/av-data-capture</Project>
+  <Overview>adc</Overview>
+  <Description>
+    adc，
+  </Description>
+  <Category>Cloud: Network:Web Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:6888]</WebUI>
+  <Icon>https://github.com/maschhoff/docker/raw/master/filebrowser/35781395.png</Icon>
+  <ExtraParams></ExtraParams>
+  <PostArgs></PostArgs>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description></Description>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/adc</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>想管理的路径</HostDir>
+      <ContainerDir>/myfiles</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>0</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>   
+  </Environment>
+</Container>
