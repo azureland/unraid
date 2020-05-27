@@ -58,5 +58,10 @@
       <Name>VNC_PORT</Name>
       <Mode/>
     </Variable>    
+     <Variable>
+      <Value>1</Value>
+      <Name>ENABLE_CJK_FONT</Name>
+      <Mode/>
+    </Variable> 
   </Environment>
 </Container>
