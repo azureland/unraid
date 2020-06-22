@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<Container>
+  <Name>qbittorrent-enhanced</Name>
+  <Repository>johngong/qbittorrent:qee_4.2.5.11</Repository>
+  <Registry>https://hub.docker.com/r/johngong/qbittorrent</Registry>
+  <Network>host</Network>
+  <Privileged>false</Privileged>
+  <Project> https://hub.docker.com/r/johngong/qbittorrent </Project>
+  <Overview>qbittorrent enhanced edition</Overview>
+  <Description>
+      qbittorrent enhanced edition with tracker list update
+  </Description>
+  <Category>Cloud: Network:Web Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:8989]</WebUI>
+  <Icon>https://d36jcksde1wxzq.cloudfront.net/be7833db9bddb4494d2a7c3dd659199a.png</Icon>
+  <ExtraParams>--restart=unless-stopped</ExtraParams>
+  <PostArgs></PostArgs>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description></Description>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/qbittorrent-enhanced-edition/config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>default download location</HostDir>
+      <ContainerDir>/Downloads</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>1000</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>000</Value>
+      <Name>UMASK_SET</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>8089</Value>
+      <Name>WEBUIPORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>8989</Value>
+      <Name>BT_PORT</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+</Container>
