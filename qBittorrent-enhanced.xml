@@ -3,7 +3,7 @@
   <Name>qbittorrent-enhanced</Name>
   <Repository>johngong/qbittorrent:qee_4.2.5.11</Repository>
   <Registry>https://hub.docker.com/r/johngong/qbittorrent</Registry>
-  <Network>host</Network>
+  <Network>bridge</Network>
   <Privileged>false</Privileged>
   <Project> https://hub.docker.com/r/johngong/qbittorrent </Project>
   <Overview>qbittorrent enhanced edition</Overview>
@@ -54,9 +54,28 @@
       <Mode/>
     </Variable>
     <Variable>
-      <Value>8989</Value>
-      <Name>BT_PORT</Name>
-      <Mode/>
+      <Value>YES</Value>
+      <Name>TRACKERSAUTO</Name>
     </Variable>
   </Environment>
+   <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>6881</HostPort>
+        <ContainerPort>6881</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>6881</HostPort>
+        <ContainerPort>6881</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>8089</HostPort>
+        <ContainerPort>8089</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
 </Container>
