@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<Container>
+  <Name>iyuu</Name>
+  <Repository>iyuucn/iyuuautoreseed:latest</Repository>
+  <Registry>https://hub.docker.com/r/iyuucn/iyuuautoreseed</Registry>
+  <Network>host</Network>
+  <Privileged>false</Privileged>
+  <Project>https://hub.docker.com/r/iyuucn/iyuuautoreseed</Project>
+  <Overview>iyuu</Overview>
+  <Description>
+  iyuu auto reseed
+  </Description>
+  <Category>Cloud: Network:Web Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:8090]</WebUI>
+  <Icon>https://d36jcksde1wxzq.cloudfront.net/be7833db9bddb4494d2a7c3dd659199a.png</Icon>
+  <ExtraParams>--restart=always</ExtraParams>
+  <PostArgs></PostArgs>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description></Description>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/iyuuautoreseed/config.php</HostDir>
+      <ContainerDir>/root/config.php</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>1000</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>000</Value>
+      <Name>UMASK_SET</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>8089</Value>
+      <Name>WEB_PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>8999</Value>
+      <Name>BT_PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>127.0.0.1</Value>
+      <Name>FB_AUTH_SERVER_ADDR</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0 9 * * 0</Value>
+      <Name>cron</Name>
+      <Mode/>
+    </Variable>
+
+  </Environment>
+</Container>
